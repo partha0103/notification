@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40ebd6d2-fe3f-407b-a455-0f015f7e0fbe" name="Default" comment="" />
+    <list default="true" id="40ebd6d2-fe3f-407b-a455-0f015f7e0fbe" name="Default" comment="Conflicts">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,15 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NotificationCount.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/NotificationCount.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,11 +47,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddMessage.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddMessage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/AddMessage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -163,6 +166,7 @@
         <option value="$PROJECT_DIR$/src/containers/NotificationCount.js" />
         <option value="$PROJECT_DIR$/src/components/AddMessage.js" />
         <option value="$PROJECT_DIR$/src/containers/AddMessage.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -325,12 +329,27 @@
       <workItem from="1536560923019" duration="1106000" />
       <workItem from="1536562939666" duration="1619000" />
       <workItem from="1536564760627" duration="741000" />
-      <workItem from="1536566582973" duration="4955000" />
+      <workItem from="1536566582973" duration="5329000" />
     </task>
+    <task id="LOCAL-00001" summary="Conflicts">
+      <created>1536578547986</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536578547986</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Conflicts">
+      <created>1536578597631</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1536578597631</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29207000" />
+    <option name="totallyTimeSpent" value="29581000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,14 +365,15 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.443038" visible="true" weight="0.24947146" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49964765" weight="0.32969698" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010571" side_tool="true" visible="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4989429" weight="0.32969698" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32969698" />
       <window_info id="npm" order="2" sideWeight="0.556962" side_tool="true" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32969698" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4989429" visible="true" weight="0.32969698" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -362,7 +382,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,14 +390,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Conflicts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Conflicts" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Sidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -640,7 +656,14 @@
     <entry file="file://$PROJECT_DIR$/src/containers/AddMessage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
         </state>
       </provider>
     </entry>
