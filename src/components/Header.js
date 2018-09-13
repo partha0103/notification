@@ -20,7 +20,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import ListItemText from "@material-ui/core/ListItemText";
-
+import moment from 'moment';
 import { MuiThemeProvider,createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
@@ -181,6 +181,9 @@ class PrimarySearchAppBar extends React.Component {
                     }}>
                         <Card className={classes.card}>
                             <CardContent>
+                                <Typography className={classes.title} color="textSecondary">
+                                    {moment(new Date()).format('dddd') + " " + moment(new Date()).format('MMMM') + " ," + moment(new Date()).date() + " " + moment(new Date()).year() }
+                                </Typography>
                                 <List component="nav">
                                     <ListItem>
                                         <ListItemText primary={`${notificationCount.assignment} Assigned Tasks`} />
