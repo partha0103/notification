@@ -8,7 +8,8 @@ const messages = (state= [], action) => {
                 message: action.message,
                 author: action.author,
                 notificationType: action.notificationType,
-                id: action.id
+                id: action.id,
+                timestamp: action.timestamp
             }])
         default:
             return state

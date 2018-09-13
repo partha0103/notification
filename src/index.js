@@ -9,9 +9,11 @@ import reducers from './reducers';
 import  setupSpcket  from './sockets';
 import createSagaMiddleware from 'redux-saga';
 import {logger} from 'redux-logger'
-
+import Header from "./components/Header"
 import handleNewMessage from './sagas';
 import username from './utils/name'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { AddNotification } from "./containers/AddNotification";
 window.username = username;
 const sagaMiddleware = createSagaMiddleware()
 

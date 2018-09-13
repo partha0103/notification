@@ -3,12 +3,13 @@ import * as types from '../constants/actionTypes'
 let nextMessageId = 0;
 let nextUserId = 0;
 
-export const addMessage = (message, notificationType, author) => ({
+export const addMessage = (message, notificationType, author, timestamp) => ({
     type: types.ADD_MESSAGE,
     id: nextMessageId++,
     message,
     notificationType,
-    author
+    author,
+    timestamp
 })
 
 export const addUser = name => ({
@@ -17,12 +18,13 @@ export const addUser = name => ({
     name
 })
 
-export const messageReceived = (message, notificationType,author) => ({
+export const messageReceived = (message, notificationType,author,timestamp) => ({
     type: types.MESSAGE_RECEIVED,
     id: nextMessageId++,
     message,
     notificationType,
-    author
+    author,
+    timestamp
 })
 
 export const populateUserList = users => ({

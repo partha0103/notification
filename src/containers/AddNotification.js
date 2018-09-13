@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import AddMessageComponent from '../components/AddMessage'
+import AddMessageComponent from '../components/AddNotification'
 import { addMessage } from '../actions'
 
 const mapDispatchToProps = dispatch => ({
@@ -9,11 +9,14 @@ const mapDispatchToProps = dispatch => ({
 })
 
 const getUsers = (users, username) => (
-    users.filter(user => user.name !== username)
+    users.filter(user => {
+        if(user.name !== username){
+            return user.name
+        }})
 )
 
 const mapStateToProps = state => ({
     users: getUsers(state.users, state.username)
 })
 
-export const AddMessage = connect(mapStateToProps, mapDispatchToProps)(AddMessageComponent)
+export const AddNotification = connect(mapStateToProps, mapDispatchToProps)(AddMessageComponent)

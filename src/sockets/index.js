@@ -1,7 +1,5 @@
 import * as types from '../constants/actionTypes';
 import { addUser, populateUserList, messageReceived, notificationCount} from '../actions';
-import {ADD_USER} from "../constants/actionTypes";
-import users from "../reducers/users";
 const getCurrentUserNotification = (users) => {
     for (var i=0; i< users.length;i++){
         if(users[i].name === window.username){
@@ -22,8 +20,7 @@ const setupSocket = (dispatch, username) => {
 
             switch (data.type ){
                 case types.ADD_MESSAGE:
-                    console.log(data)
-                    dispatch(messageReceived(data.message, data.notificationType,data.author));
+                    dispatch(messageReceived(data.message, data.notificationType,data.author, data.timestamp));
                     break;
                 case types.ADD_USER:
                     dispatch(addUser(data.name));

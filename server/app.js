@@ -52,7 +52,8 @@ wss.on('connection', (ws) => {
                     type: 'ADD_MESSAGE',
                     message: data.message,
                     notificationType: data.notificationType,
-                    author: data.author
+                    author: data.author,
+                    timestamp: new Date()
                 }, ws)
                 broadcast({
                     type: 'NOTIFIATION_COUNT',
