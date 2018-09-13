@@ -4,6 +4,9 @@ import { withStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from "@material-ui/core/ListItemText";
+import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
+import IconButton from '@material-ui/core/IconButton';
+import Delete from '@material-ui/icons/Clear';
 import moment from 'moment';
 const styles = theme => ({
     root: {
@@ -17,10 +20,17 @@ const styles = theme => ({
 });
 
 function NotificationList(props) {
+    console.log(props, "prrrrr")
     return (
             <List component="nav">
                 <ListItem button>
                     <ListItemText secondary={moment(props.timestamp).fromNow()} primary={props.message} />
+                    <ListItemSecondaryAction>
+                        <IconButton aria-label="Comments">
+                            <Delete onClick={() => props.onClick(props.id)} />
+                        </IconButton>
+                    </ListItemSecondaryAction>
+
                 </ListItem>
             </List>
     );

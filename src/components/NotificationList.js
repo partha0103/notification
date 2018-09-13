@@ -5,7 +5,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from "@material-ui/core/ListItemText";
 
-const NotificationList = ({ messages }) => {
+const NotificationList = ({ messages, dispatch }) => {
     if(messages.length === 0){
         return (
             <List>
@@ -20,6 +20,7 @@ const NotificationList = ({ messages }) => {
             {messages.slice(0).reverse().map(message => (
                 <Message
                     key={message.id}
+                    onClick={dispatch}
                     {...message}
                 />
             ))}

@@ -11,6 +11,8 @@ const messages = (state= [], action) => {
                 id: action.id,
                 timestamp: action.timestamp
             }])
+        case types.REMOVE_NOTIFICATION:
+            return state.filter(message => message.id != action.id)
         default:
             return state
     }

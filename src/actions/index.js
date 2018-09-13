@@ -37,3 +37,8 @@ export const notificationCount = notificationCount => ({
     notificationCount
 })
 
+export const removeNotification = id => ({
+    type: types.REMOVE_NOTIFICATION,
+    id
+})
+
