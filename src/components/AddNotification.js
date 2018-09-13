@@ -122,7 +122,7 @@ class CustomizedInputs extends React.Component{
                     </FormControl>
                     <br/>
                     <Button variant="contained" className={classes.button} type="submit" >
-                        Add
+                        Send
                     </Button>
                 </form>
                 <Snackbar
